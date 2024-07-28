@@ -103,16 +103,23 @@ li {
     position: absolute;
 }
 
+.overlay4{
+    width: 145px;
+}
+
 .round{
     height: 200px;
     width: 200px;
     position: absolute;
     background-color: #ffe477;
     top: 500px;
-    left: px;
     border-radius: 50%;
     filter: blur(10px);
     box-shadow: 0px 4px 100px #ffe477;
+}
+
+.opt4{
+    padding: 0px 10px;
 }
 
 
