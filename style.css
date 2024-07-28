@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0px;
+    font-family: poppins, sans-serif;
+}
+
+body {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-color: #aaa8a8;
+}
+
+.navbar {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 120px;
+    gap: 75%;
+}
+
+
+.logo {
+    height: 100px;
+    width: 110px;
+    position: relative;
+    left: 50px;
+    z-index: 5;
+}
+
+
+.logo img {
+    position: relative;
+    height: 100px;
+    width: auto;
+    background-color: #aaa8a8;
+}
+
+.backtext {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    height: 100px;
+    width: 550px;
+}
+
+.backtext p {
+    animation: anime 1s ease 500ms 1;
+    font-size: 20px;
+    font-weight: 700;
+    position: relative;
+    right: 100px;
+}
+
+ul {
+    position: relative;
+    list-style: none;
+    display: flex;
+    gap: 70px;
+    top: 30px;
+}
+
+li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+li::before{
+    content: "";
+}
+
+@keyframes anime {
+    from {
+        right: 100px;
+    }
+    to{
+        right: -100px;
+    }
+}
