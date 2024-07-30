@@ -134,6 +134,7 @@ li {
     margin: 0 20vw;
     /* box-shadow: 2px 1px 5px 1px ; */
     background-color: rgba(255, 255, 0, 0.04);
+    top: 200px;
 }
 
 .lefttext {
@@ -163,7 +164,7 @@ li {
     background-image: url(Assets/Screenshot\ 2024-07-30\ 165121.png);
     background-size: cover;
     background-position: 10%;
-    box-shadow: 2px 2px 2px 22px rgba(255, 255, 0, 0.2);
+    border: 5px solid rgb(191, 194, 45);
 }
 
 @keyframes anime {
