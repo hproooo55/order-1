@@ -113,11 +113,11 @@ li {
     width: 200px;
     position: absolute;
     background-color: #ffe477;
-    top: 500px;
+    top: 300px;
     border-radius: 50%;
     filter: blur(10px);
     box-shadow: 0px 4px 100px #ffe477;
-    animation: ballanime 5s ease 1;
+    animation: ballanime 115s ease 1;
 }
 
 .opt4{
@@ -127,21 +127,43 @@ li {
 .overview{
     position: absolute;
     display: flex;
-    height: 700px;
-    width: 1300px;
+    height: auto;
+    width: 1000px;
     backdrop-filter: blur(20px);
     border: 1px solid rgb(187, 166, 135);
     margin: 0 20vw;
+    /* box-shadow: 2px 1px 5px 1px ; */
+    background-color: rgba(255, 255, 0, 0.04);
 }
 
 .lefttext {
+    top: 0;
     width: 50%;
+    height: 100%;
     margin: 50px 50px;
     
 }
 
 .lefttext h2{
-    margin-left: 30%;
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    
+}
+
+.lefttext p {
+    font-size: 20px;
+}
+
+.img {
+    width: 50%;
+    position: relative;
+    margin: 20px;
+    background-color: #FFDE59;
+    background-image: url(Assets/Screenshot\ 2024-07-30\ 165121.png);
+    background-size: cover;
+    background-position: 10%;
+    box-shadow: 2px 2px 2px 22px rgba(255, 255, 0, 0.2);
 }
 
 @keyframes anime {
@@ -165,3 +187,18 @@ li {
     }
 }
 
+@media screen and (max-width: 1000px) {
+    .overview{
+        display: block;
+        width: 700px;
+    }
+
+    .img {
+        display: none;
+    }
+
+    .lefttext {
+        width: 90%;
+        text-align: center;
+    }
+}
