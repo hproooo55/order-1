@@ -1,11 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-* {
+*{
     margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
+    padding: 0px;
+    font-family: poppins, sans-serif;
+}
+
+*::selection {
+    background-color: #e2ce7e;
+    color: white;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
+    display: flex;
+    justify-content: center;
     position: relative;
     height: 100vh;
     width: 100%;
@@ -19,6 +31,7 @@ body {
     height: 120px;
 }
 
+
 .logo {
     height: 100px;
     width: 100px;
@@ -27,9 +40,10 @@ body {
     z-index: 5;
 }
 
+
 .logo img {
     position: relative;
-    height: 120px;
+    height:120px;
     width: auto;
     background-color: #bdb6a2;
 }
@@ -75,7 +89,7 @@ li {
     align-items: center;
     width: 125px;
     text-align: center;
-    border: 1px solid rgba(255, 255, 25, 0.4);
+    border: 1px solid  rgba(255, 255, 25, 0.4);
     border-radius: 50px;
     height: 50px;
     overflow: hidden;
@@ -93,19 +107,19 @@ li {
     overflow: hidden;
 }
 
-.overlay1 {
+.overlay1{
     left: 0px;
     position: absolute;
 }
-.overlay2, .overlay3, .overlay4 {
+.overlay2{
     position: absolute;
 }
 
-.overlay4 {
+.overlay4{
     width: 145px;
 }
 
-.round {
+.round{
     height: 200px;
     width: 200px;
     position: absolute;
@@ -117,32 +131,37 @@ li {
     animation: ballanime 115s ease 1;
 }
 
-.opt4 {
+.opt4{
     padding: 0px 10px;
 }
 
-.overview {
-    position: relative;
+.overview{
+    transition: all 3s ease;
+    position: absolute;
     display: flex;
     height: auto;
-    width: 100%;
-    padding: 100px 20vw;
+    width: 1150px;
     backdrop-filter: blur(20px);
     border: 1px solid rgb(187, 166, 135);
+    margin: 0 20vw;
     /* box-shadow: 2px 1px 5px 1px ; */
     background-color: rgba(255, 255, 0, 0.04);
-    margin: 0 auto;
-    min-height: 100vh;
-    box-sizing: border-box;
+    top: 200px;
 }
 
 .lefttext {
+    top: 0;
     width: 50%;
     height: 100%;
+    margin: 50px 50px;
+    
 }
 
-.lefttext h2 {
+.lefttext h2{
+    display: flex;
+    justify-content: center;
     font-size: 50px;
+    
 }
 
 .lefttext p {
@@ -160,32 +179,36 @@ li {
     border: 5px solid rgb(191, 194, 45);
 }
 
+a {
+    transition: all 3s ease;
+}
+
 @keyframes anime {
     0% {
         right: 100px;
     }
-    100% {
+    100%{
         right: -120px;
     }
 }
 
-@keyframes ballanime {
-    0% {
+@keyframes ballanime{
+    0%{
         left: 0;
         bottom: 0;
     }
 
-    20% {
+    20%{
         transform: translateX(80vw);
         margin-top: 50vh;
     }
 }
 
 @media screen and (max-width: 1000px) {
-    .overview {
+    .overview{
         display: block;
-        width: 90%;
-        padding: 20px;
+        width: 100vw;
+        margin: 0;
     }
 
     .img {
@@ -193,7 +216,12 @@ li {
     }
 
     .lefttext {
-        width: 100%;
+        width: 80%;
         text-align: center;
     }
+
+    .navbar li {
+        display: none;
+    }
 }
+
