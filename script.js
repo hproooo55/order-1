@@ -86,7 +86,6 @@
             scroller:"body",
             start: "top -1%",
             end: "top -10%",
-            markers: true,
             scrub:1,
         }
     
