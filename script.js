@@ -1,14 +1,3 @@
-document.addEventListener("DOMContentLoaded", function() {
-    // Smooth scrolling for navigation links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
-            e.preventDefault();
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth'
-            });
-        });
-    });
-
     let p = document.querySelector("p");
     if (p) {
         p.addEventListener("animationend", function() {
@@ -86,4 +75,24 @@ document.addEventListener("DOMContentLoaded", function() {
             overlay4.style.transition = "all 500ms ease";
         });
     }
-});
+
+    gsap.to(".navbar",{
+        height:"145px",
+        backgroundColor: "rgba(73, 73, 10, 0.5)",
+        backdropFilter: "blur(20px)",
+        duration:0.5,
+        scrollTrigger:{
+            trigger:".navbar",
+            scroller:"body",
+            start: "top -1%",
+            end: "top -10%",
+            markers: true,
+            scrub:1,
+        }
+    
+    })
+    gsap.to(".navbar, img",{
+        backgroundColor: "transparent",
+        
+    
+    })

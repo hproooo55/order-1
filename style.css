@@ -25,17 +25,19 @@ body {
 }
 
 .navbar {
-    position: relative;
+    z-index: 100;
+    position: fixed;
     display: flex;
     width: 100%;
     height: 120px;
+    
 }
 
 
 .logo {
     height: 100px;
     width: 100px;
-    position: relative;
+    position: fixed;
     left: 50px;
     z-index: 5;
 }
@@ -70,11 +72,12 @@ body {
 .navtabs {
     overflow: hidden;
     right: 50px;
-    position: absolute;
+    position: fixed;
     list-style: none;
     display: flex;
     gap: 70px;
     margin-top: 50px;
+    z-index: 100;
 }
 
 li a {
@@ -89,7 +92,7 @@ li {
     align-items: center;
     width: 125px;
     text-align: center;
-    border: 1px solid  rgba(255, 255, 25, 0.4);
+    border: 2px solid  rgba(255, 255, 25, 0.4);
     border-radius: 50px;
     height: 50px;
     overflow: hidden;
@@ -108,7 +111,7 @@ li {
 }
 
 .overlay1{
-    left: 0px;
+    left: 2px;
     position: absolute;
 }
 .overlay2{
@@ -225,3 +228,13 @@ a {
     }
 }
 
+.test {
+    position: absolute;
+    height: 1000px;
+    width: 1000px;
+    background-color: rgba(255, 255, 25, 0.1);
+    backdrop-filter: blur(231px);
+    z-index: -1;
+    top: 500px;
+    
+}
