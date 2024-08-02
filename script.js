@@ -75,7 +75,7 @@
             overlay4.style.transition = "all 500ms ease";
         });
     }
-
+function scrolltrigger() {
     gsap.to(".navbar",{
         height:"145px",
         backgroundColor: "rgba(73, 73, 10, 0.5)",
@@ -90,8 +90,27 @@
         }
     
     })
-    gsap.to(".navbar, img",{
-        backgroundColor: "transparent",
-        
+
+}
+
+function myFunction(x) {
+    if (x.matches) { // If media query matches
+      scrolltrigger()
+    }
+  }
+  
+  // Create a MediaQueryList object
+  var x = window.matchMedia("(min-width: 1000px)")
+  
+  
+  myFunction(x);
+  
+  x.addEventListener("change", function() {
+    myFunction(x);
+});
+
+gsap.to(".navbar, img",{
+    backgroundColor: "transparent",
     
-    })
+
+})
