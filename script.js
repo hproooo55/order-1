@@ -91,6 +91,19 @@ function scrolltrigger() {
     
     })
 
+    gsap.to(".process .sct1 ",{
+        transform: "translateX(0px)",
+        opacity: "1",
+        scrollTrigger:{
+            trigger:".hmis",
+            scroller:"body",
+            start: "top 700px",
+            end: "top 650px",
+            markers:true,
+            scrub:1,
+        }
+    })
+
 }
 
 function myFunction(x) {
@@ -114,3 +127,4 @@ gsap.to(".navbar, img",{
     
 
 })
+

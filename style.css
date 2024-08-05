@@ -38,7 +38,6 @@ body {
 .logo {
     height: 100px;
     width: 100px;
-    position: fixed;
     left: 50px;
 }
 
@@ -46,6 +45,7 @@ body {
 .logo img {
     position: relative;
     height:120px;
+    left: 10px;
     width: auto;
     background-color: #bdb6a2;
 }
@@ -57,6 +57,7 @@ body {
     position: absolute;
     height: 100px;
     width: 500px;
+    z-index: -1;
 }
 
 .backtext p {
@@ -67,6 +68,7 @@ body {
     position: relative;
     right: 100px;
     color: #FFDE59;
+    z-index: -1;
 }
 
 .navtabs {
@@ -123,15 +125,16 @@ li {
 }
 
 .round{
+    left: 0;
+    top: 100px;
     height: 200px;
     width: 200px;
     position: absolute;
     background-color: #ffe477;
-    top: 300px;
     border-radius: 50%;
     filter: blur(10px);
     box-shadow: 0px 4px 100px #ffe477;
-    animation: ballanime 155s ease 1;
+    animation: ballanime 105s linear infinite;
 }
 
 .opt4{
@@ -140,13 +143,13 @@ li {
 
 .overview{
     transition: all 3s ease;
-    position: absolute;
+    position: relative;
     display: flex;
     height: auto;
     width: 1150px;
     backdrop-filter: blur(20px);
     border: 1px solid rgb(187, 166, 135);
-    margin: 0 20vw;
+    /* margin: 0 20vw; */
     /* box-shadow: 2px 1px 5px 1px ; */
     background-color: rgba(255, 255, 0, 0.04);
     top: 200px;
@@ -186,6 +189,61 @@ a {
     transition: all 3s ease;
 }
 
+.process {
+    background-color: rgba(255, 255, 0, 0.04);
+    border: 1px solid rgb(187, 166, 135);
+    backdrop-filter: blur(20px);
+    position: relative;
+    /* margin: 70vh 0vw; */
+    height: auto;
+    width: 1150px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.process h2 {
+    text-align: center;
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 11%;
+    justify-content: center;
+    font-size: 60px;
+    top: 11px;
+    border-bottom: 5px solid;
+    width: 80%;
+    margin: 0 10%;
+    padding-bottom: 50px;
+}
+
+.mission{
+    margin: 0 10%;
+    font-size: 20px;
+}
+
+.hmis {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.mission p {
+    font-size: 20px;
+}
+
+.wrapper {
+    height: 100vh;
+    width: 100vw;
+    gap: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hvis {
+    font-size: 45px;
+}
+
 @keyframes anime {
     0% {
         right: 100px;
@@ -197,21 +255,56 @@ a {
 
 @keyframes ballanime{
     0%{
-        left: 0;
-        bottom: 0;
+        
     }
 
-    20%{
+    25%{
         transform: translateX(80vw);
-        margin-top: 50vh;
+        top: 80vh;
+    }
+
+    50%{
+        transform: translateX(0vw);
+        top: 160vh;
+    }
+
+    100%{
+
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .hmis{
+        font-size: 50px;
+        font-weight: 600;
+        transform: translateX(-150px);
+        opacity: 0;
+    }
+    
+    .sct1 {
+        transform: translateX(-150px);
+        opacity: 0;
     }
 }
 
 @media screen and (max-width: 1000px) {
+
+    .logo{
+        left: 10px;
+    }
+
     .overview{
         display: block;
         width: 100vw;
         margin: 0;
+    }
+
+    .process {
+        width: 100vw;
+        margin: 0, 50%;
+    }
+
+    .process h2 {
     }
 
     .img {
@@ -231,15 +324,31 @@ a {
         position: fixed;
         top: 1vh;
     }
+
+
 }
 
-.test {
-    position: absolute;
-    height: 1000px;
-    width: 1000px;
-    background-color: rgba(255, 255, 25, 0.1);
-    backdrop-filter: blur(231px);
-    z-index: -1;
-    top: 500px;
-    
+
+@media screen and (max-width: 580px){
+
+    .backtext {
+        scale: 0.89;
+        transform: translateX(-20px);
+    }
+
+    .logo {
+        scale: 0.99;
+        left: -1px;
+    }
+
+    .process{
+        /* margin-top: 30vh; */
+        gap: 10px;
+        margin-top: 15%;
+    }
+
+    .process h2 {
+        border: none;
+        line-height: 70px;
+    }
 }
