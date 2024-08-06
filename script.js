@@ -99,10 +99,27 @@ function scrolltrigger() {
             scroller:"body",
             start: "top 700px",
             end: "top 650px",
-            markers:true,
+            markers:false,
             scrub:1,
         }
     })
+
+    var swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
 
 }
 
@@ -120,6 +137,7 @@ function myFunction(x) {
   
   x.addEventListener("change", function() {
     myFunction(x);
+    location.reload();
 });
 
 gsap.to(".navbar, img",{

@@ -45,12 +45,13 @@ body {
 .logo img {
     position: relative;
     height:120px;
-    left: 10px;
+    left: 50px;
     width: auto;
     background-color: #bdb6a2;
 }
 
 .backtext {
+    left: 40px;
     overflow: hidden;
     display: block;
     top: 50px;
@@ -244,6 +245,10 @@ a {
     font-size: 45px;
 }
 
+.vision {
+    padding-bottom: 50px;
+}
+
 @keyframes anime {
     0% {
         right: 100px;
@@ -299,6 +304,8 @@ a {
         margin: 0;
     }
 
+    
+
     .process {
         width: 100vw;
         margin: 0, 50%;
@@ -338,7 +345,7 @@ a {
 
     .logo {
         scale: 0.99;
-        left: -1px;
+        left: -30px;
     }
 
     .process{
@@ -348,7 +355,50 @@ a {
     }
 
     .process h2 {
-        border: none;
         line-height: 70px;
+        padding-bottom: 10px;
+        margin-bottom: 30px;
     }
 }
+
+.work{
+    transform: translateX(-60px);
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: -50px;
+    height: 500px;
+    width: 1150px;
+
+}
+
+.work h2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+}
+
+.swiper {
+    display: flex;
+    left: 70px;
+    position: absolute;
+}
+
+.swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 87%;
+  }
