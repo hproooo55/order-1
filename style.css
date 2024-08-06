@@ -180,7 +180,7 @@ li {
     position: relative;
     margin: 20px;
     background-color: #FFDE59;
-    background-image: url(Assets/Screenshot\ 2024-07-30\ 165121.png);
+    background-image: url(Assets/pic1.png);
     background-size: cover;
     background-position: 10%;
     border: 5px solid rgb(191, 194, 45);
@@ -304,7 +304,13 @@ a {
         margin: 0;
     }
 
-    
+    .work {
+        width: 80vw;
+    }
+
+    .swiper-slide img {
+        width:80%;
+    }
 
     .process {
         width: 100vw;
@@ -400,5 +406,6 @@ a {
 
   .swiper-slide img {
     display: block;
-    width: 87%;
+    width: 88%;
+    padding: 10px;
   }
