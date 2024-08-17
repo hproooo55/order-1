@@ -368,6 +368,7 @@ a {
 }
 
 .work{
+    
     transform: translateX(-60px);
     align-items: center;
     display: flex;

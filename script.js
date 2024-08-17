@@ -103,7 +103,7 @@ function scrolltrigger() {
             scrub:1,
         }
     })
-
+}
     var swiper = new Swiper(".mySwiper", {
         effect: "coverflow",
         grabCursor: true,
@@ -121,7 +121,7 @@ function scrolltrigger() {
         },
       });
 
-}
+
 
 function myFunction(x) {
     if (x.matches) { // If media query matches
