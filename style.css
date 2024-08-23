@@ -183,7 +183,7 @@ li {
     background-image: url(Assets/pic1.png);
     background-size: cover;
     background-position: 10%;
-    border: 5px solid rgb(191, 194, 45);
+    border: 5px solid rgb(204, 206, 0.68);
 }
 
 a {
@@ -380,6 +380,7 @@ a {
 }
 
 .work h2 {
+    text-decoration: underline;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -393,7 +394,7 @@ a {
 }
 
 .swiper {
-    width: 100%;
+    width: 100vw;
     padding-top: 50px;
     padding-bottom: 50px;
   }
@@ -407,6 +408,6 @@ a {
 
   .swiper-slide img {
     display: block;
-    width: 88%;
+    width: 90%;
     padding: 10px;
   }

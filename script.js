@@ -103,6 +103,8 @@ function scrolltrigger() {
             scrub:1,
         }
     })
+
+    document.querySelector(".swiper").style.width = "100%"
 }
     var swiper = new Swiper(".mySwiper", {
         effect: "coverflow",
