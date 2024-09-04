@@ -95,7 +95,7 @@ li {
     align-items: center;
     width: 125px;
     text-align: center;
-    border: 2px solid  rgba(255, 255, 25, 0.4);
+    border: 2px solid  rgba(255, 255, 25, 0.3);
     border-radius: 50px;
     height: 50px;
     overflow: hidden;
@@ -105,7 +105,7 @@ li {
     position: absolute;
     height: 50px;
     width: 125px;
-    background-color: #e2ce7e;
+    background-color: #d8c67d;
     border-radius: 50px;
     position: absolute;
     z-index: -1;
@@ -149,7 +149,7 @@ li {
     height: auto;
     width: 1150px;
     backdrop-filter: blur(20px);
-    border: 1px solid rgb(187, 166, 135);
+    border: 1px solid rgb(187, 166, 135,);
     /* margin: 0 20vw; */
     /* box-shadow: 2px 1px 5px 1px ; */
     background-color: rgba(255, 255, 0, 0.04);
@@ -309,7 +309,7 @@ a {
     }
 
     .swiper-slide img {
-        width:80%;
+        width:90%;
     }
 
     .process {
@@ -365,10 +365,16 @@ a {
         padding-bottom: 10px;
         margin-bottom: 30px;
     }
+
+    .work h2 {
+    transform: translateX(50px);
+    text-decoration: underline;
+    width: 10%;
+    }
 }
 
 .work{
-    
+    justify-content: center;
     transform: translateX(-60px);
     align-items: center;
     display: flex;
@@ -380,11 +386,12 @@ a {
 }
 
 .work h2 {
+    transform: translateX(50px);
     text-decoration: underline;
-    width: 100%;
     display: flex;
     justify-content: center;
     font-size: 50px;
+    text-align: center;
 }
 
 .swiper {
