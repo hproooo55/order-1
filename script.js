@@ -101,7 +101,6 @@ function scrolltrigger() {
             end: "top 650px",
             markers:false,
             scrub:1,
-            markers:true,
         }
     })
 
