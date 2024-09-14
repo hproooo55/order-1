@@ -84,9 +84,10 @@ function scrolltrigger() {
         scrollTrigger:{
             trigger:".navbar",
             scroller:"body",
-            start: "top -1%",
+            start: "top-1%",
             end: "top -10%",
             scrub:1,
+            markers:true,
         }
     
     })
