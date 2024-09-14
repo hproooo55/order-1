@@ -16,6 +16,7 @@ html {
 }
 
 body {
+    scroll-behavior: smooth;
     display: flex;
     justify-content: center;
     position: relative;
@@ -183,7 +184,6 @@ li {
     background-image: url(Assets/pic1.png);
     background-size: cover;
     background-position: 10%;
-    border: 1px solid rgba(204, 206, 0.5);
     box-shadow: 0px 0px 100px rgba(255, 255, 0, 0.4);
     animation: backop 4s ease infinite;
 }
@@ -436,4 +436,30 @@ a {
 
   .contact h2 {
     font-size: 80px;
+    line-height: 100px;
   }
+
+
+  .contact i{
+    font-size: 200px;
+  }
+
+  .contact p {
+    font-size: 25px;
+    font-weight: 700;
+  }
+
+  .contact div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .contact {
+    gap: 60px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    width: 100vw;  
+}
