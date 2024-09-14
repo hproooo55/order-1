@@ -87,7 +87,6 @@ function scrolltrigger() {
             start: "top-1%",
             end: "top -10%",
             scrub:1,
-            markers:true,
         }
     
     })
